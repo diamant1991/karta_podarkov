@@ -11,8 +11,14 @@
 		text-align: left;
 		padding-left: 15px;
 	}
+	.advantages{
+		padding: 0;
+	}
 	.telephone{
 		text-align: center;
+	}
+	.advantages-block{
+		font-size: 22px;
 	}
 	.single-card-img{
 		text-align: center;
@@ -25,12 +31,51 @@
 	.single-card{
 		padding:0;
 	}
+	.contact-text{
+		margin: 20px 0;
+	}
+	.contact-form{
+		padding-left: 0;
+	}
+	.choise-block .col-xs-5{
+		padding-left: 0;
+	}
+	.baslet-form{
+		margin-bottom: 30px;
+	}
 }
 
 
 @media(max-width: 767px){
+	.hidden-xs{
+		display: none !important;
+	}
+	.advantages-block{
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.slide-img{
+		height: 300px;
+		padding-left: 35px;
+		padding-top: 125px;
+	}
+	.slide-text{
+		font-size: 34px;
+	}
 	.nav{
 		display: none;
+	}
+	.contacts{
+		padding: 0;
+	}
+	.contact-text{
+		text-align: center;
+	}
+	.adress{
+		text-align:center;
+	}
+	.basket{
+		padding:0;
 	}
 	.sidebar{
 		width: 250px;
@@ -108,9 +153,43 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.single-card .title{
+		font-size: 26px;
+	}
+	.single-card .text{
+		font-size: 16px;
+	}
+	.single-card .text{
+		height: auto;
+		margin-bottom: 20px;
+	}
+
 }
 
 @media(max-width: 480px){
+	.single-card .title{
+		font-size: 22px;
+	}
+	.slide-text{
+		font-size: 20px;
+	}
+	.slct,
+	.drop{
+		font-size: 14px;
+	}
+	.slide-img{
+		height: 250px;
+		padding-left: 10px;
+		padding-top: 100px;
+	}
+	.single-card,
+	.single-card:last-child{
+		margin-bottom: 30px;
+	}
+	.single-card-icon li a{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	.card-text{
 		width: 250px;
 		height: 150px;

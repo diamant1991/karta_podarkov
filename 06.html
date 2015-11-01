@@ -32,7 +32,7 @@
 <header class="header">
 	<div class="container">
 		<div class="header-block clearfix">
-			<div class="col-md-9">
+			<div class="col-lg-9 col-md-7">
 				<div class="row">
 					<div class="logo">
 						<a href="#">
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-5">
 				<div class="row">
 					<div class="telephone">
 						8 800 500 5050
@@ -52,13 +52,32 @@
 	</div>
 </header>
 
+<aside class="sidebar">
+	<div class="left-menu">
+		<ul>
+			<li class="active"><a href="#">преимущества</a></li>
+			<li><a href="#">услуги</a></li>
+			<li><a href="#">спецпредложения</a></li>
+			<li><a href="#">контакты</a></li>
+		</ul>
+	</div>
+</aside>
+
 <div class="wrapper">
 	<div class="container">
 		<div class="slide">
-			<div class="slide-img" style="background-image: url(images/bg.jpg)"></div>
+			<div class="slide-img" style="background-image: url(images/bg.jpg)">
+				<div class="slide-text">
+					<p>
+						<span>решение</span><br>
+						<span>нестандартных</span><br>
+						<span>задач</span><br>
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="advantages clearfix">
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<div class="advantages-block">
 					<div class="advantages-img">
 						<img src="images/adv-1.png" height="179" width="141" alt="">
@@ -69,7 +88,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<div class="advantages-block">
 					<div class="advantages-img">
 						<img src="images/adv-2.png" height="182" width="152" alt="">
@@ -80,7 +99,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<div class="advantages-block">
 					<div class="advantages-img">
 						<img src="images/adv-3.png" height="137" width="205" alt="">
@@ -91,7 +110,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-sm-6">
 				<div class="advantages-block">
 					<div class="advantages-img">
 						<img src="images/adv-4.png" height="132" width="193" alt="">
@@ -192,7 +211,6 @@
       itemsMobile : [400,1]
   });
  
-  // Custom Navigation Events
   $(".next").click(function(){
     owl.trigger('owl.next');
   })
