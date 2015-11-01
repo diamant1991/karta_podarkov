@@ -1,6 +1,29 @@
+@media(min-width: 992px){
+	.partner-carousel .item.eset{
+	  padding-right: 15px;
+	}
+	.partner-carousel .item.cns{
+		padding-left: 20px;
+	}
+}
+
+@media(max-width: 1369px){
+	.cat-nav{
+		font-size: 28px;
+	}
+}
+
 @media(max-width: 1299px){
 	.telephone{
 		padding-top: 30px;
+	}
+	.cat-nav ul{
+		display: block;
+	}
+	.cat-nav li{
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 10px;
 	}
 }
 

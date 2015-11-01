@@ -55,4 +55,7 @@ $(document).ready(function() {
 	    }
 	});
 
+	$(function() { $('input[placeholder]').placeholder(); });
+
 });
+
