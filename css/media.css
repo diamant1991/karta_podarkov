@@ -7,6 +7,14 @@
 	}
 }
 
+
+@media(max-width: 1440px){
+	.single-text .table-block{
+		height: 26vw;
+	}
+}
+
+
 @media(max-width: 1369px){
 	.cat-nav{
 		font-size: 28px;
@@ -48,6 +56,23 @@
 		text-align: left;
 		padding-left: 15px;
 	}
+	.single-text{
+		padding-right: 0;
+	}
+	.single-text .table-block{
+		height: 377px;
+	}
+	.img-overlay-block{
+		width: 100%;
+		text-align: center;
+	}
+	.single-text{
+		width: 100%;
+	}
+	.single-card .text{
+		height: auto;
+		margin-bottom: 30px;
+	}
 	.advantages{
 		padding: 0;
 	}
@@ -86,6 +111,10 @@
 @media(max-width: 767px){
 	.hidden-xs{
 		display: none !important;
+	}
+	.single-card .text{
+		font-size: 16px;
+		margin-bottom: 0;
 	}
 	.advantages-block{
 		height: auto;
@@ -183,13 +212,6 @@
 	.single-card .title{
 		font-size: 26px;
 	}
-	.single-card .text{
-		font-size: 16px;
-	}
-	.single-card .text{
-		height: auto;
-		margin-bottom: 20px;
-	}
 	.card-text{
 	  margin-left: -185px;
 	  margin-top: -100px;
@@ -207,9 +229,19 @@
 
 }
 
+
+@media(max-width: 650px){
+	.single-text .table-block{
+		height: 58vw;
+	}
+}
+
 @media(max-width: 480px){
 	.single-card .title{
 		font-size: 22px;
+	}
+	.single-text{
+		font-size: 18px;
 	}
 	.slide-text{
 		font-size: 20px;

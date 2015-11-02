@@ -445,6 +445,9 @@ body {
   padding: 0 55px;
   margin-bottom: 80px;
 }
+.single-card-container{
+  position: relative;
+}
 .single-card:last-child {
   margin-bottom: 130px;
 }
@@ -461,20 +464,34 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-.single-card-icon{
-  position: relative;
-  padding-top: 170px;
-}
 .single-card .text {
-  height: 170px;
   font-family: 'AvenirNextCyrDemi';
   font-size: 18px;
   line-height: 1.2;
+  height: 170px;
+  /* opacity: 0;
+  visibility:hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5); */
+}
+.single-text{
+  font-size: 24px;
+  font-family: 'AvenirNextCyrRegular';
+  text-transform: uppercase;
+  line-height: 1.1;
   position: absolute;
-  left:0;
+  z-index: 3;
+  width:50%;
+  padding-right: 45px;
+  text-align: center;
+  left: 0;
   top: 0;
-  z-index: 2;
-  width: 100%;
+  color: #fff;
   opacity: 0;
   visibility:hidden;
   -webkit-transition: all 0.4s ease-in-out;
@@ -484,7 +501,13 @@ body {
   -ms-transform: scale(0.5);
   -o-transform: scale(0.5);
   transform: scale(0.5);
-
+}
+  .single-text .table-block{
+    width: 100%;
+    height: 377px;
+  }
+.single-card .col-md-6{
+  position: static;
 }
 .single-card-icon ul{
   display: -webkit-box;
@@ -528,18 +551,40 @@ body {
   -o-transform: scale(1);
   transform: scale(1);
 
-}
+} 
 .single-card-icon li a img {
   max-width: 100%;
   height: auto;
 }
-.single-card-icon li .table-block {
+.single-card-icon > ul >  li > a .table-block {
   width: 100%;
   height: 110px;
 }
 .single-card-img {
   padding-right: 45px;
 }
+.single-card-img .img-block{
+  position: relative;
+}
+.img-overlay-block{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+  .img-overlay-block.active{
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    visibility: visible;
+  }
 .single-card-img img {
   max-width: 100%;
   height: auto;

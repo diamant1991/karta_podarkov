@@ -55,6 +55,12 @@ $(document).ready(function() {
 	    }
 	});
 
+	$('.single-card-icon a').hover(function() {
+		$(this).parent().parent().parent().parent().parent().parent().find('.img-overlay-block').addClass('active');
+	}, function() {
+		$(this).parent().parent().parent().parent().parent().parent().find('.img-overlay-block').removeClass('active');
+	});
+
 	$(function() { $('input[placeholder]').placeholder(); });
 
 });
