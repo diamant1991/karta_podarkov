@@ -112,6 +112,16 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	.deals-text{
+		text-align: center;
+		margin: 20px 0;
+	}
+	.deals-container{
+		text-align: center;
+	}
+	.deals-container .table-block{
+	  height: auto;
+	}
 	.single-card .text{
 		font-size: 16px;
 		margin-bottom: 0;

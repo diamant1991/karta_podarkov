@@ -65,3 +65,14 @@ $(document).ready(function() {
 
 });
 
+$('form').bind('submit', function(event) {
+ $(this).find('[type=text],textarea').each(function() {
+   if(!$(this).val().length) { 
+   event.preventDefault();
+     $(this).addClass('error');
+   }
+   else{
+   	$(this).removeClass('error');
+   }
+ });
+});
