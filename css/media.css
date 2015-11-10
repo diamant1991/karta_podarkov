@@ -49,6 +49,11 @@
 		font-size: 53px;
 	}
 }
+@media(min-width: 992px) and (max-width: 1299px){
+	.choise-block .bottom-block input[type="text"]{
+		width: 50%;
+	}
+}
 
 @media(max-width: 991px){
 	.nav{

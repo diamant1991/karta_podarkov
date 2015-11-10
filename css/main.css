@@ -731,6 +731,7 @@ body {
   font-size: 20px;
   height: 45px;
   line-height: 45px;
+  display: inline;
   position: relative;
 }
 .price span {
@@ -762,6 +763,40 @@ body {
 .choise-block {
   margin-bottom: 10px;
 }
+.choise-block .title{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'AvenirNextCyrLight';
+}
+.choise-block .bottom-block{
+  position: relative;
+  line-height: 1;
+  margin-top: 26px;
+}
+.choise-block .del{
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 50%;
+  margin-top: -6.5px;
+}
+.choise-block .bottom-block input[type="text"]{
+  height: 50px;
+  border:0;
+  outline: 0;
+  width: 190px;
+  background-color: #ccc;
+  font-size: 18px;
+  font-family: 'AvenirNextCyrLight';
+  padding-left: 10px;
+  color: #000;
+}
+.choise-block .bottom-block input[type="text"]::-webkit-input-placeholder {color:#000;}
+.choise-block .bottom-block input[type="text"]::-moz-placeholder          {color:#000;}
+.choise-block .bottom-block input[type="text"]:-moz-placeholder           {color:#000;}
+.choise-block .bottom-block input[type="text"]:-ms-input-placeholder      {color:#000;}
+
 .choise-img {
   height: 166px;
   background-repeat: no-repeat;

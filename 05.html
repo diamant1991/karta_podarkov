@@ -7,6 +7,7 @@
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<script src="js/modernizr-2.8.3.min.js"></script>
@@ -125,32 +126,19 @@
 							</div>
 							<div class="col-xs-7">
 								<div class="row">
-									<div class="select">
-										<a href="javascript:void(0);" class="slct">Количество</a>
-										<ul class="drop">
-											<li>100</li>
-											<li>200</li>
-											<li>300</li>
-											<li>500</li>
-											<li>1000</li>
-										</ul>
-										<input type="hidden" id="select">
+									<div class="title">
+										<p>номинал от 300 до 100 000 рублей</p>
+										<p>шаг 50 рублей</p>
 									</div>
-									<div class="select">
-										<a href="javascript:void(0);" class="slct">Номинал</a>
-										<ul class="drop">
-											<li>Номинал 1</li>
-											<li>номинал 2</li>
-											<li>Номинал 3</li>
-											<li>Номинал 4</li>
-										</ul>
-										<input type="hidden" id="select2">
-									</div>
-									<div class="price">
-										<span>75 600</span>
-										<a class="del-price">
+									<input type="text" id="step_1" name="step_1" value="">
+									<div class="bottom-block">
+										<input type="text" placeholder="КОЛИЧЕСТВО">
+										<div class="price">
+											<span>75 600</span>
+										</div>
+										<span class="del">
 											<img src="images/del.png" height="13" width="13" alt="">
-										</a>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -161,32 +149,19 @@
 							</div>
 							<div class="col-xs-7">
 								<div class="row">
-									<div class="select">
-										<a href="javascript:void(0);" class="slct">Количество</a>
-										<ul class="drop">
-											<li>100</li>
-											<li>200</li>
-											<li>300</li>
-											<li>500</li>
-											<li>1000</li>
-										</ul>
-										<input type="hidden" id="select">
+									<div class="title">
+										<p>номинал от 300 до 100 000 рублей</p>
+										<p>шаг 50 рублей</p>
 									</div>
-									<div class="select">
-										<a href="javascript:void(0);" class="slct">Номинал</a>
-										<ul class="drop">
-											<li>Номинал 1</li>
-											<li>номинал 2</li>
-											<li>Номинал 3</li>
-											<li>Номинал 4</li>
-										</ul>
-										<input type="hidden" id="select2">
-									</div>
-									<div class="price">
-										<span>75 600</span>
-										<a class="del-price">
+									<input type="text" id="step_2" name="step_2" value="">
+									<div class="bottom-block">
+										<input type="text" placeholder="КОЛИЧЕСТВО">
+										<div class="price">
+											<span>75 600</span>
+										</div>
+										<span class="del">
 											<img src="images/del.png" height="13" width="13" alt="">
-										</a>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -197,32 +172,19 @@
 							</div>
 							<div class="col-xs-7">
 								<div class="row">
-									<div class="select">
-										<a href="javascript:void(0);" class="slct">Количество</a>
-										<ul class="drop">
-											<li>100</li>
-											<li>200</li>
-											<li>300</li>
-											<li>500</li>
-											<li>1000</li>
-										</ul>
-										<input type="hidden" id="select">
+									<div class="title">
+										<p>номинал от 300 до 100 000 рублей</p>
+										<p>шаг 50 рублей</p>
 									</div>
-									<div class="select">
-										<a href="javascript:void(0);" class="slct">Номинал</a>
-										<ul class="drop">
-											<li>Номинал 1</li>
-											<li>номинал 2</li>
-											<li>Номинал 3</li>
-											<li>Номинал 4</li>
-										</ul>
-										<input type="hidden" id="select2">
-									</div>
-									<div class="price">
-										<span>75 600</span>
-										<a class="del-price">
+									<input type="text" id="step_3" name="step_3" value="">
+									<div class="bottom-block">
+										<input type="text" placeholder="КОЛИЧЕСТВО">
+										<div class="price">
+											<span>75 600</span>
+										</div>
+										<span class="del">
 											<img src="images/del.png" height="13" width="13" alt="">
-										</a>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -271,7 +233,42 @@
 
 
 <script src="js/vendor.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/placeholder.js"></script>
 <script src="js/script.js"></script>
+<script>
+$(document).ready(function() {
+		$("#step_1").ionRangeSlider({
+	    min: 300,
+	    max: 100000,
+	    onChange: function (data) {
+       $('.js-irs-0 .irs-single').show();
+    },
+    onFinish: function (data) {
+        $('.irs-single').hide();
+    }
+	});
+		$("#step_2").ionRangeSlider({
+	    min: 300,
+	    max: 100000,
+	    onChange: function (data) {
+       $('.js-irs-1 .irs-single').show();
+    },
+    onFinish: function (data) {
+        $('.irs-single').hide();
+    }
+	});
+		$("#step_3").ionRangeSlider({
+	    min: 300,
+	    max: 100000,
+	    onChange: function (data) {
+       $('.js-irs-2 .irs-single').show();
+    },
+    onFinish: function (data) {
+        $('.irs-single').hide();
+    }
+	});
+});
+</script>
 </body>
 </html>
