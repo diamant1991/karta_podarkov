@@ -249,6 +249,18 @@
 	.single-text .table-block{
 		height: 58vw;
 	}
+	.choise-block .col-xs-5,
+	.choise-block .col-xs-7{
+		float: none;
+		width: 100%;
+	}
+	.choise-img{
+		width: 235px;
+	}
+	.choise-block .title{
+		margin: 10px 0;
+	}
+
 }
 
 @media(max-width: 480px){
@@ -292,5 +304,11 @@
 	}
 	.card-text .title{
 		font-size: 36px;
+	}
+	.choise-block .bottom-block input[type="text"]{
+		width: 50%;
+	}
+	.choise-block .del{
+		top: 43%;
 	}
 }

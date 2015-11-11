@@ -149,16 +149,6 @@
 }
 
 
-
-.irs-line-mid,
-.irs-line-left,
-.irs-line-right,
-.irs-bar,
-.irs-bar-edge,
-.irs-slider {
-    background: url(sprite-skin-flat.png) repeat-x;
-}
-
 .irs {
     height: 40px;
     max-width: 391px;
@@ -220,6 +210,18 @@
     overflow: hidden;
     border: 14px solid transparent;
     border-top-color: #e81927;
+}
+.js-irs-0 .irs-single{
+    background-color: #fed731;
+}
+.js-irs-0 .irs-single:after{
+    border-top-color: #fed731;
+}
+.js-irs-2 .irs-single{
+    background-color: #e0227a;
+}
+.js-irs-2 .irs-single:after{
+    border-top-color: #e0227a;
 }
 .irs-single:before{
     content: "";
