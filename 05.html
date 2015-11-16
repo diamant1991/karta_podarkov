@@ -242,30 +242,24 @@ $(document).ready(function() {
 	    min: 300,
 	    max: 100000,
 	    onChange: function (data) {
-       $('.js-irs-0 .irs-single').show();
-    },
-    onFinish: function (data) {
-        $('.irs-single').hide();
-    }
-	});
+       $('.js-irs-0 .irs-single').addClass('visible');
+       $('.js-irs-0 .irs-single').addClass('yellow');
+	    }
+		});
 		$("#step_2").ionRangeSlider({
 	    min: 300,
 	    max: 100000,
 	    onChange: function (data) {
-       $('.js-irs-1 .irs-single').show();
-    },
-    onFinish: function (data) {
-        $('.irs-single').hide();
-    }
+       $('.js-irs-1 .irs-single').addClass('visible');
+       $('.js-irs-1 .irs-single').addClass('red');
+    	}
 	});
 		$("#step_3").ionRangeSlider({
 	    min: 300,
 	    max: 100000,
 	    onChange: function (data) {
-       $('.js-irs-2 .irs-single').show();
-    },
-    onFinish: function (data) {
-        $('.irs-single').hide();
+       $('.js-irs-2 .irs-single').addClass('visible');
+       $('.js-irs-2 .irs-single').addClass('pink');
     }
 	});
 });

@@ -77,7 +77,7 @@
      .irs-single {
         position: absolute; 
         display: block;
-        top: -60px; 
+        top: -50px; 
         left: 0;
         margin-left: -3px;
         cursor: default;
@@ -188,11 +188,11 @@
 .irs-single {
     color: #fff;
     font-size: 20px; 
-    line-height: 1.333;
+    line-height: 1;
     text-shadow: none;
     font-family: 'AvenirNextCyrBold';
     background: #e81927;
-    padding: 10px;
+    padding: 9px;
     padding-right: 30px;
     display: none;
 }
@@ -211,17 +211,23 @@
     border: 14px solid transparent;
     border-top-color: #e81927;
 }
-.js-irs-0 .irs-single{
+.irs-single.yellow{
     background-color: #fed731;
 }
-.js-irs-0 .irs-single:after{
+.irs-single.yellow:after{
     border-top-color: #fed731;
 }
-.js-irs-2 .irs-single{
-    background-color: #e0227a;
+.irs-single.red{
+    background-color: #e81927;
 }
-.js-irs-2 .irs-single:after{
-    border-top-color: #e0227a;
+.irs-single.red:after{
+    border-top-color: #e81927;
+}
+.irs-single.pink{
+    background-color: #e02279;
+}
+.irs-single.pink:after{
+    border-top-color: #e02279;
 }
 .irs-single:before{
     content: "";
@@ -244,4 +250,7 @@
 }
 
 .irs-disabled {
+}
+.irs-single.visible{
+    display: block;
 }
